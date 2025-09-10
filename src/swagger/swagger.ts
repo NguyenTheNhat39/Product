@@ -12,6 +12,7 @@ export const swaggerSpec = swaggerJSDoc({
         },
         servers: [
             { url: `http://localhost:${env.PORT}`, description: 'Local Development' },
+            { url: `https://product-qapl.onrender.com`, description: 'Production' },
         ],
         tags: [
             {
