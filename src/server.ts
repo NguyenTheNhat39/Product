@@ -4,9 +4,10 @@ import { env } from './config/env';
 import ProductRouter from './routers/product.router';
 import { swaggerSpec } from './swagger/swagger';
 import swaggerUi from 'swagger-ui-express';
+import cors from 'cors'; 
 
 const app = express();
-
+app.use(cors());
 // Middleware
 app.use(express.json());
 
